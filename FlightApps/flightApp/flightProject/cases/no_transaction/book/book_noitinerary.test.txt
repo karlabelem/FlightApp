@@ -1,0 +1,13 @@
+create frogemoji notfrogemoji 500
+login frogemoji notfrogemoji
+search "Portland OR" "Miami FL" 1 1 1
+book 2
+quit
+*
+
+Created user frogemoji
+Logged in as frogemoji
+No flights match your selection
+No such itinerary 2
+Goodbye
+*

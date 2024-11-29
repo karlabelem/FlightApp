@@ -1,0 +1,35 @@
+# Create one useringuser, then try to login in two different sessions.
+
+# commands:
+create useringuser mypassword 100
+login useringuser mypassword
+quit
+*
+
+# expected output:
+Created useringuser useringuser
+Logged in as useringuser
+Goodbye
+|
+Failed to create useringuser
+Logged in as useringuser
+Goodbye
+*
+
+##################### Terminal #2: #####################
+
+# commands:
+create useringuser mypassword 100
+login useringuser mypassword
+quit
+*
+
+# expected output:
+Failed to create useringuser
+Logged in as useringuser
+Goodbye
+|
+Created useringuser useringuser
+Logged in as useringuser
+Goodbye
+*

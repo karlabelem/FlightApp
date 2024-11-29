@@ -1,0 +1,42 @@
+# Two terminals attempt to create pudu. One of the two terminals will
+# succeed in user creation, but both should succeed in logging in.
+
+
+# Terminal 1's inputs:
+create pudu pudu 10000
+login pudu pudu
+quit
+*
+
+# Scenario 1 of 2: Terminal 1 suceeds in user creation
+Created user pudu
+Logged in as pudu
+Goodbye
+|  # recall that '|' denotes alternative outputs in the same terminal
+
+
+# Terminal 1 fails to create user, as Terminal 2 already has
+Failed to create user
+Logged in as pudu
+Goodbye
+*
+
+##################### Concurrently executed commands: #####################
+
+# Terminal 2's inputs:
+create pudu pudu 10000
+login pudu pudu
+quit
+*
+
+# Scenario 1 of 2: Terminal 2 suceeds in user creation
+Failed to create user
+Logged in as pudu
+Goodbye
+|
+
+# Scenario 2 of 2: Terminal 2 fails to create user as Terminal 1 already has
+Created user pudu
+Logged in as pudu
+Goodbye
+*

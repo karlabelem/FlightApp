@@ -1,0 +1,25 @@
+# Tests 2 terminals trying to create an account with DIFFERENT usernames
+# Both should succeed
+
+
+# Terminal 1's commands:
+create cars pwd1 100
+quit
+*
+
+# Output for Terminal 1
+Created user cars
+Goodbye
+*
+
+##################### Concurrently executed commands: #####################
+
+# Terminal 2's commands:
+create frogs pwd2 100
+quit
+*
+
+# Output for Terminal 2
+Created user frogs
+Goodbye
+*

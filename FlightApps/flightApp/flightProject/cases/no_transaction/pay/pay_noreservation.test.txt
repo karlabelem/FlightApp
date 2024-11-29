@@ -1,0 +1,16 @@
+create frogemoji notfrogemoji 500
+login frogemoji notfrogemoji
+search "Seattle WA" "Miami FL" 1 1 1
+book 0
+pay 5
+quit
+*
+
+Created user frogemoji
+Logged in as frogemoji
+Itinerary 0: 1 flight(s), 323 minutes
+ID: 60201 Day: 1 Carrier: AS Number: 16 Origin: Seattle WA Dest: Miami FL Duration: 323 Capacity: 11 Price: 118
+Booked flight(s), reservation ID: 1
+Cannot find unpaid reservation 5 under user: frogemoji
+Goodbye
+*

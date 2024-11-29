@@ -1,0 +1,38 @@
+# create a user in one terminal and log in in another
+
+# Terminal 1 commands:
+create penguins penguins 300
+create zebras zebras 100
+login zebras zebras
+quit
+*
+
+# Terminal 1 outputs:
+Created user penguins
+Created user zebras
+Logged in as zebras
+Goodbye
+|
+
+Created user penguins
+Failed to create user
+Logged in as zebras
+Goodbye
+*
+
+# Terminal 1 commands:
+create zebras zebras 100
+login penguins penguins
+quit
+*
+
+# Terminal 2 outputs:
+Failed to create user
+Logged in as penguins
+Goodbye
+|
+
+Created user zebras
+Logged in as penguins
+Goodbye
+*

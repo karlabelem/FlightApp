@@ -1,0 +1,12 @@
+#Check first 2 flights from NY to Seattle on the 8th
+
+search "New York NY" "Seattle WA" 0 8 2
+quit
+*
+
+Itinerary 0: 1 flight(s), 344 minutes
+ID: 76352 Day: 8 Carrier: B6 Number: 175 Origin: New York NY Dest: Seattle WA Duration: 344 Capacity: 11 Price: 516
+Itinerary 1: 1 flight(s), 351 minutes
+ID: 725521 Day: 8 Carrier: B6 Number: 63 Origin: New York NY Dest: Seattle WA Duration: 351 Capacity: 19 Price: 466
+Goodbye
+*

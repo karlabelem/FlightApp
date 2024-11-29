@@ -1,0 +1,7 @@
+login banana bananapassword
+quit
+*
+
+Login failed
+Goodbye
+*

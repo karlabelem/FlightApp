@@ -1,0 +1,28 @@
+# Create and login two unrelated users.  Note that even though these commands are
+# executed concurrently, they do not have alternative outputs
+
+# commands:
+create hoodie hoodie 100
+login hoodie hoodie
+quit
+*
+
+# expected ouptut:
+Created user hoodie
+Logged in as hoodie
+Goodbye
+*
+
+##################### Terminal #2: #####################
+
+# commands:
+create sweater sweater 100
+login sweater sweater
+quit
+*
+
+# expected output:
+Created user sweater
+Logged in as sweater
+Goodbye
+*

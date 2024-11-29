@@ -1,0 +1,11 @@
+# Verify we can create a single user
+
+# commands to execute:
+create bananaUser bananapassword -500000
+quit
+*
+
+# expected output from those commands:
+Failed to create user
+Goodbye
+*

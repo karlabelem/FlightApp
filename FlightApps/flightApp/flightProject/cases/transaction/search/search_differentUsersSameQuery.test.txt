@@ -1,0 +1,33 @@
+# Verify that different users can search for identical itineraries concurrently
+
+# commands for orangefruit to execute:
+create orangefruit orangefruit 100000
+login orangefruit orangefruit
+search "Seattle WA" "Boston MA" 1 1 1
+quit
+*
+
+# expected output from orangefruit's commands:
+Created user orangefruit
+Logged in as orangefruit
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Goodbye
+*
+
+##################### Concurrently executed commands: #####################
+
+# bananafruit's commands, executed concurrently with orangefruit:
+create bananafruit bananafruit 100000
+login bananafruit bananafruit
+search "Seattle WA" "Boston MA" 1 1 1
+quit
+*
+
+# expected output from bananafruit's commands
+Created user bananafruit
+Logged in as bananafruit
+Itinerary 0: 1 flight(s), 297 minutes
+ID: 60454 Day: 1 Carrier: AS Number: 24 Origin: Seattle WA Dest: Boston MA Duration: 297 Capacity: 14 Price: 140
+Goodbye
+*
